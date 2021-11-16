@@ -25,7 +25,7 @@ pilaDINDJARIN = Pila()
 
 
 planetasVisitadosBobaFett = []
-
+planetasVisitadoDinDjarin = []
 CreditosGalacticosBobaFett = 0;
 CreditosGalacticosDinDjarin = 0;
 
@@ -86,7 +86,7 @@ while not pilaDINDJARIN.pila_vacia():
     z = pilaDINDJARIN.desapilar()
 
     contadorCapturasDinDjarin += 1
-    ([]).append(z[0])
+    planetasVisitadoDinDjarin.append(z[0])
 
     CreditosGalacticosDinDjarin += z[1]
 
@@ -100,7 +100,7 @@ for planetasBobaFett in planetasVisitadosBobaFett:
 
 print(">>Los planetas vistados por Din Djarin son:")
 
-for planetasDinDjarin in []:
+for planetasDinDjarin in planetasVisitadoDinDjarin:
     print("-",planetasDinDjarin);
 
 print()

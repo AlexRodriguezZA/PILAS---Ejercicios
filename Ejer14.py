@@ -22,6 +22,7 @@ for i in range(0,6):
                 z = pilaAux.desapilar()
                 pila.apilar(z)
 
+#Mostramos los elementos
 while not pila.pila_vacia():
     y = pila.desapilar()
     print(y)
